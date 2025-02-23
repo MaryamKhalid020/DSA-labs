@@ -1,0 +1,11 @@
+﻿driver.obj : error LNK2005: main already defined in ddriver.obj
+validity.obj : error LNK2005: main already defined in ddriver.obj
+ddriver.obj : error LNK2019: unresolved external symbol "public: __cdecl Stack<int>::Stack<int>(void)" (??0?$Stack@H@@QEAA@XZ) referenced in function main
+ddriver.obj : error LNK2019: unresolved external symbol "public: __cdecl Stack<int>::~Stack<int>(void)" (??1?$Stack@H@@QEAA@XZ) referenced in function main
+ddriver.obj : error LNK2019: unresolved external symbol "public: void __cdecl Stack<int>::Push(int)" (?Push@?$Stack@H@@QEAAXH@Z) referenced in function main
+ddriver.obj : error LNK2019: unresolved external symbol "public: void __cdecl Stack<int>::Pop(int &)" (?Pop@?$Stack@H@@QEAAXAEAH@Z) referenced in function main
+ddriver.obj : error LNK2019: unresolved external symbol "public: __cdecl Stack<float>::Stack<float>(void)" (??0?$Stack@M@@QEAA@XZ) referenced in function main
+ddriver.obj : error LNK2019: unresolved external symbol "public: __cdecl Stack<float>::~Stack<float>(void)" (??1?$Stack@M@@QEAA@XZ) referenced in function main
+ddriver.obj : error LNK2019: unresolved external symbol "public: void __cdecl Stack<float>::Push(float)" (?Push@?$Stack@M@@QEAAXM@Z) referenced in function main
+ddriver.obj : error LNK2019: unresolved external symbol "public: void __cdecl Stack<float>::Pop(float &)" (?Pop@?$Stack@M@@QEAAXAEAM@Z) referenced in function main
+C:\Users\asa\Desktop\dsa lab\lab 2\x64\Debug\lab 2.exe : fatal error LNK1120: 8 unresolved externals
