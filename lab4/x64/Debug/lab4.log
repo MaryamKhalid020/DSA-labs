@@ -1,0 +1,13 @@
+﻿  4.cpp
+  dynque.cpp
+C:\Users\asa\Desktop\dsa lab\lab4\lab4\dynque.cpp(8,5): error C3861: 'maxQue': identifier not found
+C:\Users\asa\Desktop\dsa lab\lab4\lab4\dynque.cpp(12,26): error C3861: 'maxQue': identifier not found
+C:\Users\asa\Desktop\dsa lab\lab4\lab4\dynque.cpp(8,5): error C2065: 'maxQue': undeclared identifier
+C:\Users\asa\Desktop\dsa lab\lab4\lab4\dynque.cpp(12,26): error C2065: 'maxQue': undeclared identifier
+C:\Users\asa\Desktop\dsa lab\lab4\lab4\dynque.cpp(29,22): error C3861: 'maxQue': identifier not found
+C:\Users\asa\Desktop\dsa lab\lab4\lab4\dynque.cpp(29,22): error C2065: 'maxQue': undeclared identifier
+C:\Users\asa\Desktop\dsa lab\lab4\lab4\dynque.cpp(43,29): error C3861: 'maxQue': identifier not found
+C:\Users\asa\Desktop\dsa lab\lab4\lab4\dynque.cpp(43,29): error C2065: 'maxQue': undeclared identifier
+C:\Users\asa\Desktop\dsa lab\lab4\lab4\dynque.cpp(54,31): error C3861: 'maxQue': identifier not found
+C:\Users\asa\Desktop\dsa lab\lab4\lab4\dynque.cpp(54,31): error C2065: 'maxQue': undeclared identifier
+  Generating Code...
