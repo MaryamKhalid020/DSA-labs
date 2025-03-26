@@ -1,3 +1,40 @@
+//exercise 2.1
+//part b
+#include <iostream>
+#include "stack.h"
+
+using namespace std;
+
+string ReverseString(const string& str) {
+    Stack s;
+    
+    // Push each character onto the stack
+    for (char ch : str) {
+        s.Push(ch);
+    }
+
+    // Pop characters to get the reversed string
+    string reversed;
+    while (!s.Isempty()) {
+        reversed += s.Peek(); // Get the top character
+        char temp;
+        s.Pop(temp); // Remove the top character
+    }
+
+    return reversed;
+}
+
+int main() {
+    string input;
+    cout << "Enter a string: ";
+    cin >> input;
+
+    string reversed = ReverseString(input);
+    cout << "Reversed string: " << reversed << endl;
+
+    return 0;
+}
+
 //exercise 2.2
 // PART A
 #include <iostream>
