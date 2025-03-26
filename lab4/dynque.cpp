@@ -3,25 +3,25 @@
 using namespace std;
 
 template <class ItemType>
-Que<ItemType>::Que()   // Default Constructor
+Que<ItemType>::Que()   
 {
     maxQue = 501;
     front = 0;
     rear = 0;
     count = 0;
-    items = new ItemType[maxQue];  // dynamically allocates
+    items = new ItemType[maxQue];  
 }
 
 template <class ItemType>
 Que<ItemType>::Que(int max) {
-    items = new ItemType[max];  // ✅ Allocate memory
+    items = new ItemType[max];  
     front = rear = count = 0;
 }
 
 
 template <class ItemType>
 Que<ItemType>::~Que() {
-    delete[] items;   // Deallocates array
+    delete[] items;   
 }
 
 template <class ItemType>
