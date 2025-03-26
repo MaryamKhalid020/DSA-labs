@@ -78,73 +78,44 @@ int main() {
 
 //PART B
 /*#include <iostream>
-#include <string>
+#include "stack.h"
+#include <cctype>
 using namespace std;
-
-class myStack {
-    char arr[100] = {};
-    int top;
-
-public:
-    myStack() : top(-1) {}
-
-    void push(char c) {
-        arr[++top] = c;
-    }
-
-    char pop() {
-        return arr[top--];
-    }
-
-    char peek() {
-        return arr[top];
-    }
-
-    bool isEmpty() {
-        return top == -1;
-    }
-};
 
 int precedence(char op) {
     if (op == '+' || op == '-') return 1;
     if (op == '*' || op == '/') return 2;
+    if (op == '^') return 3;
     return 0;
 }
 
-string infixToPostfix(const string& infix) {
-    myStack s;
-    string postfix;
+string infixToPostfix(string infix) {
+    stack<char> s;
+    string postfix = "";
 
     for (char ch : infix) {
-        // Operand: directly append to postfix
-        if (isalpha(ch) || isdigit(ch)) {
+        if (isalnum(ch)) {
             postfix += ch;
-        }
-        // Open parenthesis: push to stack
-        else if (ch == '(') {
+        } else if (ch == '(') {
             s.push(ch);
-        }
-        // Close parenthesis: pop until '(' is found
-        else if (ch == ')') {
-            while (!s.isEmpty() && s.peek() != '(') {
-                postfix += s.pop();
+        } else if (ch == ')') {
+            while (!s.isempty() && s.peek() != '(') {
+                postfix += s.peek();
+                s.pop();
             }
-            if (!s.isEmpty() && s.peek() == '(') {
-                s.pop(); // Remove '(' from stack
-            }
-        }
-        // Operator: pop operators with higher or equal precedence
-        else {
-            while (!s.isEmpty() && s.peek() != '(' && precedence(s.peek()) >= precedence(ch)) {
-                postfix += s.pop();
+            s.pop();
+        } else {
+            while (!s.isempty() && precedence(s.peek()) >= precedence(ch)) {
+                postfix += s.peek();
+                s.pop();
             }
             s.push(ch);
         }
     }
 
-    // Pop all remaining operators from stack
-    while (!s.isEmpty()) {
-        postfix += s.pop();
+    while (!s.isempty()) {
+        postfix += s.peek();
+        s.pop();
     }
 
     return postfix;
@@ -152,70 +123,66 @@ string infixToPostfix(const string& infix) {
 
 int main() {
     string infix;
-    cout << "Enter a valid infix expression: ";
+    cout << "Enter an infix expression: ";
     cin >> infix;
 
-    cout << "Postfix expression: " << infixToPostfix(infix) << endl;
+    string postfix = infixToPostfix(infix);
+    cout << "Postfix expression: " << postfix << endl;
 
     return 0;
-}*/
+}
+*/
 
 
 //PART C
 /*#include <iostream>
-#include <string>
+#include <cctype>
+#include "stack.h"
+
 using namespace std;
 
-class Stack {
-    int arr[100];
-    int top;
+int EvaluatePostfix(const string& expression) {
+	Stack s;
+	int op1, op2, result;
 
-public:
-    Stack() : top(-1) {}
+	for (char ch : expression) {
+		if (isdigit(ch)) {
+			s.Push(ch - '0');
+		} 
+		else {
+			s.Pop(op2);
+			s.Pop(op1);
 
-    void push(int val) {
-        arr[++top] = val;
-    }
-
-    int pop() {
-        return arr[top--];
-    }
-
-    bool isEmpty() {
-        return top == -1;
-    }
-};
-
-int evaluatePostfix(const string& postfix) {
-    Stack s;
-
-    for (char ch : postfix) {
-        if (isdigit(ch)) {
-            s.push(ch - '0'); // Convert character to integer
-        }
-        else {
-            int val2 = s.pop();
-            int val1 = s.pop();
-
-            switch (ch) {
-            case '+': s.push(val1 + val2); break;
-            case '-': s.push(val1 - val2); break;
-            case '*': s.push(val1 * val2); break;
-            case '/': s.push(val1 / val2); break;
-            }
-        }
-    }
-
-    return s.pop();
+			switch (ch) {
+				case '+': result = op1 + op2; break;
+				case '-': result = op1 - op2; break;
+				case '*': result = op1 * op2; break;
+				case '/': 
+					if (op2 == 0) {
+						cout << "Error: Division by zero!" << endl;
+						exit(1);
+					}
+					result = op1 / op2; 
+					break;
+				default:
+					cout << "Error: Invalid operator '" << ch << "'" << endl;
+					exit(1);
+			}
+			s.Push(result);
+		}
+	}
+	return s.Peek();
 }
 
 int main() {
-    string postfix;
-    cout << "Enter a valid postfix expression: ";
-    cin >> postfix;
+	string postfixExp;
+	cout << "Enter a postfix expression (e.g., 23*54*+9-): ";
+	cin >> postfixExp;
 
-    cout << "Result: " << evaluatePostfix(postfix) << endl;
+	int result = EvaluatePostfix(postfixExp);
+	cout << "Result: " << result << endl;
 
-    return 0;
+	return 0;
 }
+
 */
