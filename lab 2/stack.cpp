@@ -39,3 +39,11 @@ void Stack::Pop(ItemType& item)
 	item = items[top];
 	top--;
 }
+//exercise 2.1 a
+ItemType Stack::Peek() const {
+    if (Isempty()) {
+        cout << "Stack is empty" << endl;
+        exit(1); 
+    }
+    return items[top];
+}
