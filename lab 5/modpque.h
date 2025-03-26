@@ -9,8 +9,8 @@ using namespace std;
 template <class ItemType>
 class PQue {
 public:
-    PQue(int numPriorities);  // Constructor with dynamic priority levels
-    ~PQue();                  // Destructor to free memory
+    PQue(int numPriorities);  
+    ~PQue();                  
 
     int IsFull() const;
     int IsEmpty() const;
@@ -18,21 +18,19 @@ public:
     void Remove(ItemType& item);
 
 private:
-    int n;                  // Number of priority levels
-    Que<ItemType>* PQ;      // Pointer to dynamically allocated array of priority queues
+    int n;                  
+    Que<ItemType>* PQ;      
 };
 
-// Constructor
 template<class ItemType>
 PQue<ItemType>::PQue(int numPriorities) {
     n = numPriorities;
-    PQ = new Que<ItemType>[n];  // Dynamically allocate priority queues
+    PQ = new Que<ItemType>[n];  
 }
 
-// Destructor
 template<class ItemType>
 PQue<ItemType>::~PQue() {
-    delete[] PQ;  // Free allocated memory
+    delete[] PQ;  
 }
 
 template<class ItemType>
@@ -62,7 +60,7 @@ void PQue<ItemType>::Insert(ItemType newItem, int p) {
 
 template<class ItemType>
 void PQue<ItemType>::Remove(ItemType& item) {
-    for (int i = n - 1; i >= 0; i--) {  // Start from highest priority
+    for (int i = n - 1; i >= 0; i--) {  
         if (!PQ[i].IsEmpty()) {
             PQ[i].Remove(item);
             return;
@@ -71,4 +69,4 @@ void PQue<ItemType>::Remove(ItemType& item) {
     cerr << "Priority Queue is empty!" << endl;
 }
 
-#endif // PQUE_H
+#endif 
