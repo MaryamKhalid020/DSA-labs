@@ -1,4 +1,4 @@
-//exercise 4.3
+//exercise 4.3 and 4.4
 #include <iostream>
 using namespace std;
 
