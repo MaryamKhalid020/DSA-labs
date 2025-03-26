@@ -37,67 +37,44 @@ int main() {
 
 //exercise 2.2
 // PART A
-#include <iostream>
-#include <string>
+/*#include <iostream>
+#include "stack.h"
 using namespace std;
 
-class mystack {
-private:
-    char arr[100];
-    int top;
-
-public:
-    mystack() : top(-1) {}
-
-    void push(char c) {
-        arr[++top] = c;
-    }
-
-    char pop() {
-        return arr[top--];
-    }
-
-    bool isEmpty() {
-        return top == -1;
-    }
-
-    char peek() {
-        return arr[top];
-    }
-};
-
-bool isValidParentheses(const string& expr) {
-    mystack s;
+bool isValidExpression(const string& expr) {
+    Stack s;
     for (char ch : expr) {
-        if (ch == '(' || ch == '[' || ch == '{') {
-            s.push(ch);
-        }
-        else if (ch == ')' || ch == ']' || ch == '}') {
-            if (s.isEmpty()) return false;
-            char top = s.pop();
-            if ((ch == ')' && top != '(') ||
-                (ch == ']' && top != '[') ||
-                (ch == '}' && top != '{')) {
-                return false;
+        if (ch == '(' || ch == '{' || ch == '[') {
+            s.Push(ch);  // Push opening brackets
+        } else if (ch == ')' || ch == '}' || ch == ']') {
+            if (s.Isempty()) return false;  // More closing than opening
+
+            char topChar;
+            s.Pop(topChar);
+
+            if ((ch == ')' && topChar != '(') ||
+                (ch == '}' && topChar != '{') ||
+                (ch == ']' && topChar != '[')) {
+                return false;  // Mismatched brackets
             }
         }
     }
-    return s.isEmpty();
+    return s.Isempty();  // Stack should be empty if expression is valid
 }
 
 int main() {
     string expr;
-    cout << "Enter a fully parenthesized expression: ";
+    cout << "Enter a parenthesized expression: ";
     cin >> expr;
 
-    if (isValidParentheses(expr))
-        cout << "The expression is valid.\n";
-    else
-        cout << "The expression is invalid.\n";
+    if (isValidExpression(expr)) {
+        cout << "Valid expression!" << endl;
+    } else {
+        cout << "Invalid expression!" << endl;
+    }
 
     return 0;
-}
-
+}*/
 
 //PART B
 /*#include <iostream>
