@@ -1,0 +1,3 @@
+﻿  dlist.cpp
+C:\Users\asa\Desktop\dsa lab\lab 7\lab 7\doubly.h(87,1): warning C4715: 'doubleLinked<__int64>::popFront': not all control paths return a value
+  lab 7.vcxproj -> C:\Users\asa\Desktop\dsa lab\lab 7\x64\Debug\lab 7.exe
