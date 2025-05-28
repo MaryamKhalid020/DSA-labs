@@ -1,0 +1,5 @@
+﻿  main.cpp
+C:\Users\asa\Desktop\dsa lab\lab 10\lab 10\weighed_graph.h(51,25): warning C4566: character represented by universal-character-name '\u221E' cannot be represented in the current code page (1252)
+  (compiling source file 'main.cpp')
+  
+  lab 10.vcxproj -> C:\Users\asa\Desktop\dsa lab\lab 10\x64\Debug\lab 10.exe
