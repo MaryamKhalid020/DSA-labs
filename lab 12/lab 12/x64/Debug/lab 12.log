@@ -1,0 +1,27 @@
+﻿  12.1.cpp
+  12.10.cpp
+C:\Users\asa\Desktop\dsa lab\lab 12\lab 12\12.1.cpp(20,5): error C4996: 'getch': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _getch. See online help for details.
+C:\Users\asa\Desktop\dsa lab\lab 12\lab 12\12.10.cpp(18,15): error C4996: 'strdup': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _strdup. See online help for details.
+C:\Users\asa\Desktop\dsa lab\lab 12\lab 12\12.10.cpp(24,15): error C4996: 'strdup': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _strdup. See online help for details.
+C:\Users\asa\Desktop\dsa lab\lab 12\lab 12\12.10.cpp(37,19): error C4996: 'strdup': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _strdup. See online help for details.
+C:\Users\asa\Desktop\dsa lab\lab 12\lab 12\12.10.cpp(76,5): error C4996: 'getch': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _getch. See online help for details.
+  12.11.cpp
+C:\Users\asa\Desktop\dsa lab\lab 12\lab 12\12.11.cpp(23,5): error C4996: 'getch': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _getch. See online help for details.
+  12.2.cpp
+C:\Users\asa\Desktop\dsa lab\lab 12\lab 12\12.2.cpp(20,5): error C4996: 'getch': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _getch. See online help for details.
+  12.3.cpp
+C:\Users\asa\Desktop\dsa lab\lab 12\lab 12\12.3.cpp(22,5): error C4996: 'getch': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _getch. See online help for details.
+  12.4.cpp
+C:\Users\asa\Desktop\dsa lab\lab 12\lab 12\12.4.cpp(19,5): error C4996: 'getch': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _getch. See online help for details.
+  12.5.cpp
+C:\Users\asa\Desktop\dsa lab\lab 12\lab 12\12.5.cpp(13,16): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\asa\Desktop\dsa lab\lab 12\lab 12\12.5.cpp(17,5): error C4996: 'getch': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _getch. See online help for details.
+  12.6.cpp
+C:\Users\asa\Desktop\dsa lab\lab 12\lab 12\12.6.cpp(20,5): error C4996: 'getch': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _getch. See online help for details.
+  12.7.cpp
+C:\Users\asa\Desktop\dsa lab\lab 12\lab 12\12.7.cpp(22,5): error C4996: 'getch': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _getch. See online help for details.
+  12.8.cpp
+C:\Users\asa\Desktop\dsa lab\lab 12\lab 12\12.8.cpp(23,5): error C4996: 'getch': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _getch. See online help for details.
+  12.9.cpp
+C:\Users\asa\Desktop\dsa lab\lab 12\lab 12\12.9.cpp(18,5): error C4996: 'getch': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _getch. See online help for details.
+  Generating Code...
